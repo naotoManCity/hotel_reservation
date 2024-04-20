@@ -30,6 +30,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/access') }}">お問合せ</a>
                 </li>
+                </ul>
             </div>
         </div>
     </nav>
