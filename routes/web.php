@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -25,9 +26,8 @@ Route::get('/access', function () {
     return view('access');
 });
 
-Route::get('/contacts', function () {
-    return view('users.contacts');
-});
+Route::get('/contacts', [ContactController::class, 'create'])->name('contacts.create');
+Route::post('/thanks', [ContactController::class, 'send'])->name('contacts.send');
 
 Auth::routes();
 

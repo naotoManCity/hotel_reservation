@@ -28,7 +28,7 @@
                     <a class="nav-link" href="{{ url('/access') }}">アクセス</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/contacts') }}">お問合わせ</a>
+                    <a class="nav-link" href="{{ route('contacts.create') }}">お問合わせ</a>
                 </li>
                 </ul>
             </div>
