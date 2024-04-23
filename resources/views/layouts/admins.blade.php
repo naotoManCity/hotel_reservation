@@ -39,7 +39,7 @@
                         @endif
                         @if (Route::has('register'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('お問合わせ一覧') }}</a>
+                                <a class="nav-link" href="{{ route('contacts.index') }}">{{ __('お問合わせ一覧') }}</a>
                             </li>
                         @endif
                         <li class="nav-item dropdown">

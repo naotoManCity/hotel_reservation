@@ -11,6 +11,12 @@ use App\Mail\ContactAdminMail;
 
 class ContactController extends Controller
 {
+    public function index()
+    {
+        $contacts = Contact::all();
+        return view('admins.contacts.index', compact('contacts'));
+    }
+
     public function create()
     {
         return view('users.contacts.create');

@@ -28,6 +28,7 @@ Route::get('/access', function () {
 
 Route::get('/contacts', [ContactController::class, 'create'])->name('contacts.create');
 Route::post('/thanks', [ContactController::class, 'send'])->name('contacts.send');
+Route::get('/admin/contacts', [ContactController::class, 'index'])->name('contacts.index');
 
 Auth::routes();
 
